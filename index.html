@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue轮子</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        *::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        *::before {
+            box-sizing: border-box;
+        }
+        :root{
+            --button-height:32px;
+            --font-size:14px;
+        }
+    </style>
+    <style>
+        .g-button{
+            font-size: var(--font-size);
+            height:var(--button-height);
+        }
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <g-button class="g-button"></g-button>
+</div>
+
+<script src="./node_modules/vue/dist/vue.min.js"></script>
+<script src="button.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'hi'
+        }
+    })
+</script>
+</body>
+
+</html>
