@@ -22,18 +22,37 @@
         *::before {
             box-sizing: border-box;
         }
-        :root{
-            --button-height:32px;
-            --font-size:14px;
+        :root {
+            --font-size: 14px;
+            --button-height: 32px;
+            --line-height: 20px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --button-radius: 4px;
+            --color: #333;
+            --border-color: rgb(153, 153, 153);
+            --border-color-hover: #666;
+        }
+        body{
+            padding-left: 30px;
+            padding-top: 30px;
         }
     </style>
-
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <g-button></g-button>
+    <g-button  icon="setting" icon-position="right">按钮</g-button>
+    <g-button  icon="setting" >按钮</g-button>
+
 </div>
 <script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1182227_vjnnc9ezrq.js"></script>
 </body>
 
 </html>
