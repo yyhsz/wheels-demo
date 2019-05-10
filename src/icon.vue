@@ -1,5 +1,5 @@
 <template>
-    <svg class="icon">
+    <svg class="g-icon">
         <use :xlink:href=`#i-${name}`></use>
     </svg>
 </template>
@@ -8,6 +8,6 @@
         props:['name'],
     }
 </script>
-<style lang="scss" scoped>
-    .icon{width: 1em;height:1em;}
+<style lang="scss">
+    .g-icon{width: 1em;height:1em;}
 </style>
